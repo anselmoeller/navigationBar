@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+header h1{
+    width: auto;
+    padding-inline: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(11, 102, 176);
+}
+.mainNavBar{
+    flex: 2;
+    display: flex;
+}
+.optionsAndIconsArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+.listOfOptions{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.liStyles{
+    display: flex;
+    margin-inline: 2vw;
+    list-style: none;
+    font-size: 25px;
+    cursor: pointer
+}
+.socialMediaIconsArea{
+    flex: 0.2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1vw;
+}
+.alignSocialMobileMedias{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 20px;
+}
+.styleA{
+    display: flex;
+    margin-left: 1vw;
+}
+.stylesIcons{
+    height: 30px;
+    width: 30px;
+}
+
+footer {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer small {
+    width: 100%;
+    text-align: center;
+    color: #868686;
+}
+.menuIconArea{
+    flex: 1;
+    margin-right: 2vw;
+}
+.btnMenu{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: flex-end;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 2vw 2vw 0 0;
+}
+.btnMenu img{
+    height: 30px;
+    width: 30px;
+    cursor : pointer
+}
+.btnMenu img:hover{
+    opacity: 0.7;
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    text-align: center;
+    word-wrap: break-word;
+    padding-inline: 20px;
+}
+
+.mobileNavBar{
+    position: absolute;
+    top: 79px;
+    width: 100%;
+    background-color: #fff;
+}
+.listOfOptionsMobile{
+    width: 100%;
+}
+.liStylesMobile{
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    left: 20px;
+    cursor: pointer;
+}
+.liStylesMobile:hover{
+    color: rgb(11, 102, 176);
+    background-color: antiquewhite;
+}
+
+@media (max-width: 880px) {
+
+    header h1{
+        font-size: 25px;
+    }
+    .optionsAndIconsArea{
+        display: none;
+    }
+    .menuIconArea{
+        display: block;
+    }
+}
